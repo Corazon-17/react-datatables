@@ -152,7 +152,7 @@ export default function DataTables({ data }) {
                     return (
                       <td
                         {...cell.getCellProps()}
-                        className="px-2 py-1 whitespace-nowrap border-b bg-white dark:bg-black"
+                        className="px-2 py-1 whitespace-nowrap border-b bg-white"
                       >
                         {cell.render("Cell")}
                       </td>
@@ -165,7 +165,7 @@ export default function DataTables({ data }) {
         </table>
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-2 justify-between items-center p-2 border-t-2 bg-white dark:bg-black">
+      <div className="flex flex-col sm:flex-row gap-2 justify-between items-center p-2 border-t-2 bg-white">
         <span>
           Showing {(pageIndex + 1) * pageSize - pageSize + 1} to{" "}
           {(pageIndex + 1) * pageSize} of {rows.length} entries
