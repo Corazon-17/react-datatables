@@ -12,7 +12,7 @@ function App() {
         const data = json.posts;
         const newData = data.map((obj) => ({
           ...obj,
-          tags: obj.tags.join(", "),
+          tags: obj.tags.join(", "), // convert tags from array to string.
         }));
         setPosts(newData);
       })
@@ -28,7 +28,7 @@ function App() {
       <h1 className="text-3xl font-extrabold text-center mb-4">
         Mini Project - DataTables
       </h1>
-      <DataTables data={posts} className="" />
+      <DataTables data={posts} />
     </div>
   );
 }
