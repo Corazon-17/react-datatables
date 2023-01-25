@@ -111,7 +111,7 @@ export default function DataTables({ data }) {
           <label>Search title: </label>
           <input
             type="text"
-            className="border border-black"
+            className="px-1 border border-black"
             value={filterText}
             onChange={(e) => handleTitleFilter(e)}
           />
