@@ -10,12 +10,12 @@ function App() {
     fetch("https://jsonplaceholder.typicode.com/photos")
       .then((res) => res.json())
       .then((json) => {
-        const data = json.posts;
-        const newData = data.map((obj) => ({
-          ...obj,
-          tags: obj.tags.join(", "), // convert tags from array to string.
-        }));
-        setPosts(newData);
+//         const data = json.posts;
+//         const newData = data.map((obj) => ({
+//           ...obj,
+//           tags: obj.tags.join(", "), // convert tags from array to string.
+//         }));
+        setPosts(json);
       })
       .catch((err) => console.error(err));
   };
