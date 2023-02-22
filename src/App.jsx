@@ -6,7 +6,8 @@ function App() {
   const [posts, setPosts] = useState();
 
   const fetchData = async () => {
-    fetch("https://dummyjson.com/posts")
+//     fetch("https://dummyjson.com/posts")
+    fetch("https://jsonplaceholder.typicode.com/photos")
       .then((res) => res.json())
       .then((json) => {
         const data = json.posts;
